@@ -1,5 +1,11 @@
 #define NS_PRIVATE_IMPLEMENTATION
-#include "Application.h"
+#include "application_delegate.h"
+#include "view_delegate.h"
+
+ApplicationDelegate::ApplicationDelegate(ViewDelegate* view_delegate)
+: view_delegate(view_delegate)
+{
+}
 
 void ApplicationDelegate::applicationWillFinishLaunching( NS::Notification* pNotification )
 {
@@ -32,16 +38,16 @@ void ApplicationDelegate::applicationDidFinishLaunching( NS::Notification* pNoti
         NS::BackingStoreBuffered,
         false ));
 
-    // mtl_device = MTL::CreateSystemDefaultDevice();
+    MTL::Device* mtl_device = view_delegate->device.get();
 
-    // mtk_view = MTK::View::alloc()->init( frame, mtl_device );
-    // mtk_view->setColorPixelFormat( MTL::PixelFormat::PixelFormatBGRA8Unorm_sRGB );
-    // mtk_view->setClearColor( MTL::ClearColor::Make( 1.0, 0.0, 0.0, 1.0 ) );
+    MTK::View* mtk_view = MTK::View::alloc()->init( frame, mtl_device );
+    mtk_view->setColorPixelFormat( MTL::PixelFormat::PixelFormatBGRA8Unorm_sRGB );
+    mtk_view->setClearColor( MTL::ClearColor::Make( 1.0, 0.0, 0.0, 1.0 ) );
 
-    // view_delegate = new MyMTKViewDelegate( _pDevice );
-    // mtk_view->setDelegate( _pViewDelegate );
+    mtk_view->setDelegate( view_delegate );
 
-    // window->setContentView( mtk_view );
+    window->setContentView( mtk_view );
+
     window->setTitle( NS::String::string( "Nebula", NS::StringEncoding::UTF8StringEncoding ) );
 
     window->makeKeyAndOrderFront( nullptr );
