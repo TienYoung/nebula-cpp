@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/00-window/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/00-window/macosx/arm64/debug/src/learn-metal/00-window/00-window.cpp.o", "src/learn-metal/00-window/00-window.cpp"],
+  "file": "src/learn-metal/00-window/00-window.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/07-texturing/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/07-texturing/macosx/arm64/debug/src/learn-metal/07-texturing/07-texturing.cpp.o", "src/learn-metal/07-texturing/07-texturing.cpp"],
+  "file": "src/learn-metal/07-texturing/07-texturing.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/09-compute-to-render/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/09-compute-to-render/macosx/arm64/debug/src/learn-metal/09-compute-to-render/09-compute-to-render.cpp.o", "src/learn-metal/09-compute-to-render/09-compute-to-render.cpp"],
+  "file": "src/learn-metal/09-compute-to-render/09-compute-to-render.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/05-perspective/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/05-perspective/macosx/arm64/debug/src/learn-metal/05-perspective/05-perspective.cpp.o", "src/learn-metal/05-perspective/05-perspective.cpp"],
+  "file": "src/learn-metal/05-perspective/05-perspective.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/02-argbuffers/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/02-argbuffers/macosx/arm64/debug/src/learn-metal/02-argbuffers/02-argbuffers.cpp.o", "src/learn-metal/02-argbuffers/02-argbuffers.cpp"],
+  "file": "src/learn-metal/02-argbuffers/02-argbuffers.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/06-lighting/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/06-lighting/macosx/arm64/debug/src/learn-metal/06-lighting/06-lighting.cpp.o", "src/learn-metal/06-lighting/06-lighting.cpp"],
+  "file": "src/learn-metal/06-lighting/06-lighting.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/04-instancing/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/04-instancing/macosx/arm64/debug/src/learn-metal/04-instancing/04-instancing.cpp.o", "src/learn-metal/04-instancing/04-instancing.cpp"],
+  "file": "src/learn-metal/04-instancing/04-instancing.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/10-frame-debugging/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/10-frame-debugging/macosx/arm64/debug/src/learn-metal/10-frame-debugging/10-frame-debugging.cpp.o", "src/learn-metal/10-frame-debugging/10-frame-debugging.cpp"],
+  "file": "src/learn-metal/10-frame-debugging/10-frame-debugging.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/03-animation/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/03-animation/macosx/arm64/debug/src/learn-metal/03-animation/03-animation.cpp.o", "src/learn-metal/03-animation/03-animation.cpp"],
+  "file": "src/learn-metal/03-animation/03-animation.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/01-primitive/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/01-primitive/macosx/arm64/debug/src/learn-metal/01-primitive/01-primitive.cpp.o", "src/learn-metal/01-primitive/01-primitive.cpp"],
+  "file": "src/learn-metal/01-primitive/01-primitive.cpp"
+},
+{
+  "directory": "/Users/aska/Development/nebula-cpp",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos15.4", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk", "-g", "-Wall", "-Werror", "-O0", "-std=c++17", "-Iinclude/metal-cpp", "-Iinclude/metal-cpp-extensions", "-Ibuild/.gens/08-compute/macosx/arm64/debug/platform/windows/idl", "-framework", "Foundation", "-framework", "Metal", "-framework", "MetalKit", "-o", "build/.objs/08-compute/macosx/arm64/debug/src/learn-metal/08-compute/08-compute.cpp.o", "src/learn-metal/08-compute/08-compute.cpp"],
+  "file": "src/learn-metal/08-compute/08-compute.cpp"
+}]
