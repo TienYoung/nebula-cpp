@@ -3,10 +3,15 @@ add_rules("mode.debug", "mode.release")
 set_languages("c++17")
 set_warnings("all", "error")
 
+add_includedirs("include")
 add_includedirs("include/metal-cpp")
 add_includedirs("include/metal-cpp-extensions")
 
 add_frameworks("Foundation", "Metal", "MetalKit")
+
+target("nebula")
+    set_kind("binary")
+    add_files("src/nebula/*.cpp")
 
 target("learn-metal")
     set_kind("phony")
