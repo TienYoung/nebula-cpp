@@ -2,6 +2,7 @@ add_rules("mode.debug", "mode.release")
 
 set_languages("c++17")
 set_warnings("all", "error")
+set_optimize("faster")
 
 add_includedirs("include")
 add_includedirs("include/metal-cpp")

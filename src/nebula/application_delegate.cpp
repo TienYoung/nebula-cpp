@@ -2,7 +2,7 @@
 #include "application_delegate.h"
 #include "view_delegate.h"
 
-ApplicationDelegate::ApplicationDelegate(ViewDelegate* view_delegate)
+ApplicationDelegate::ApplicationDelegate(std::shared_ptr<ViewDelegate> view_delegate)
 : view_delegate(view_delegate)
 {
 }
@@ -30,23 +30,13 @@ void ApplicationDelegate::applicationWillFinishLaunching( NS::Notification* pNot
 
 void ApplicationDelegate::applicationDidFinishLaunching( NS::Notification* pNotification )
 {
-    CGRect frame = (CGRect){ {100.0, 100.0}, {512.0, 512.0} };
-
-    NS::SharedPtr<NS::Window> window = NS::TransferPtr(NS::Window::alloc()->init(
-        frame,
+    NS::Window* window = NS::Window::alloc()->init(
+        view_delegate->GetFrame(),
         NS::WindowStyleMaskClosable|NS::WindowStyleMaskTitled,
         NS::BackingStoreBuffered,
-        false ));
+        false );
 
-    MTL::Device* mtl_device = view_delegate->device.get();
-
-    MTK::View* mtk_view = MTK::View::alloc()->init( frame, mtl_device );
-    mtk_view->setColorPixelFormat( MTL::PixelFormat::PixelFormatBGRA8Unorm_sRGB );
-    mtk_view->setClearColor( MTL::ClearColor::Make( 1.0, 0.0, 0.0, 1.0 ) );
-
-    mtk_view->setDelegate( view_delegate );
-
-    window->setContentView( mtk_view );
+    window->setContentView( view_delegate->TransferView() );
 
     window->setTitle( NS::String::string( "Nebula", NS::StringEncoding::UTF8StringEncoding ) );
 
