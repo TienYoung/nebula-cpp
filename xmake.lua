@@ -1,14 +1,31 @@
 add_rules("mode.debug", "mode.release")
 
 set_languages("c++17")
-set_warnings("all", "error")
-set_optimize("faster")
+-- set_warnings("all", "error")
+-- set_optimize("faster")
 
 add_includedirs("include")
 add_includedirs("include/metal-cpp")
 add_includedirs("include/metal-cpp-extensions")
 
 add_frameworks("Foundation", "Metal", "MetalKit")
+
+target("stream-server")
+    set_kind("binary")
+    add_files("src/stream-server/*.cpp")
+    
+    add_includedirs("/Users/aska/Development/webrtc-checkout/src")
+    add_includedirs("/Users/aska/Development/webrtc-checkout/src/third_party/abseil-cpp")
+    
+    if is_mode("debug") then
+        add_linkdirs("/Users/aska/Development/webrtc-checkout/src/out/Debug/obj")
+    else
+        add_linkdirs("/Users/aska/Development/webrtc-checkout/src/out/Release/obj")
+    end
+    add_links("webrtc")
+
+    add_defines("WEBRTC_POSIX")
+    add_defines("WEBRTC_MAC")
 
 target("nebula")
     set_kind("binary")
