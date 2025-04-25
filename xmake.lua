@@ -12,20 +12,22 @@ add_frameworks("Foundation", "Metal", "MetalKit")
 
 target("stream-server")
     set_kind("binary")
-    add_files("src/stream-server/*.cpp")
-    
+
+    add_defines("WEBRTC_POSIX")
+    add_defines("WEBRTC_MAC")
+
     add_includedirs("/Users/aska/Development/webrtc-checkout/src")
     add_includedirs("/Users/aska/Development/webrtc-checkout/src/third_party/abseil-cpp")
     
+    add_files("src/stream-server/*.cpp")
+
     if is_mode("debug") then
         add_linkdirs("/Users/aska/Development/webrtc-checkout/src/out/Debug/obj")
     else
         add_linkdirs("/Users/aska/Development/webrtc-checkout/src/out/Release/obj")
     end
     add_links("webrtc")
-
-    add_defines("WEBRTC_POSIX")
-    add_defines("WEBRTC_MAC")
+    add_frameworks("CoreAudio", "AudioToolbox", "CoreGraphics")
 
 target("nebula")
     set_kind("binary")
